@@ -21,7 +21,7 @@ const purpleBarDefaultSx  = {
 export default function Footer() {
   const purpleBar = (
     <Container component="div" sx={purpleBarDefaultSx}>
-      <Typography>JT International (Philippines), Inc.</Typography>
+      <Typography>Gawa Gawa Philippines, Corporation</Typography>
       <Container component="div" sx={{ height: "auto", flexDirection: "row", bgcolor: "transparent" }}>
         <Box component="a">Terms & Conditions</Box>
         <Box component="a">Privacy Policy</Box>
