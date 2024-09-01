@@ -25,4 +25,5 @@ export type TLogoProps = BoxProps & {
 
 export type TPagesProps = {
   children: React.ReactNode | React.ReactElement;
+  authenticated: boolean;
 }

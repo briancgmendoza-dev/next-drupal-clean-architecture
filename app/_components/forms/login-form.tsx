@@ -6,7 +6,7 @@ import { useRouter } from "next/navigation"
 import { Form } from "@/app/_components/ui/form"
 import { Textbox } from "@/app/_components/ui/input"
 import { Button } from "@/app/_components/ui/button"
-import { login } from "@/app/actions"
+import { login } from "@/app/(public)/actions"
 
 export default function LoginForm() {
   const router = useRouter()
