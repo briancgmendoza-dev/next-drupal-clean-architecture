@@ -2,7 +2,7 @@ import * as React from 'react'
 import { Box } from '@mui/material'
 
 import { TDefaultProps, TContainerProps } from '@/app/_components/types'
-import { mergeSx } from '@/lib/helpers'
+import { mergeSx } from '@/app/_components/utils'
 
 const Container = React.forwardRef<HTMLDivElement, TContainerProps>(({ sx = {}, ...props }, ref) => {
   const containerDefaultSx: TDefaultProps = {
@@ -27,7 +27,7 @@ const Container = React.forwardRef<HTMLDivElement, TContainerProps>(({ sx = {}, 
 Container.displayName = "Container"
 
 
-const RoundedContainer = React.forwardRef<HTMLDivElement, TBoxProps>(({ sx = {}, ...props }, ref) => {
+const RoundedContainer = React.forwardRef<HTMLDivElement, TContainerProps>(({ sx = {}, ...props }, ref) => {
   const roundedContainerDefaultSx: TDefaultProps = {
     width: "50px",
     height: "50px",

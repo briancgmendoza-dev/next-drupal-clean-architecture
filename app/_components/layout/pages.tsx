@@ -1,8 +1,8 @@
-import { Container } from "@/app/_components/Container"
-import { Card } from "@/app/_components/Card"
-import NavBar from "@/app/_components/NavBar"
-import Footer from "@/app/_components/Footer"
-import { TPagesProps } from "./types"
+import { Container } from "@/app/_components/ui/container"
+import { Card } from "@/app/_components/ui/card"
+import NavBar from "@/app/_components/layout/navbar"
+import Footer from "@/app/_components/layout/footer"
+import { TPagesProps } from "@/app/_components/types"
 
 export const Pages = ({ children }: TPagesProps) => (
   <Container

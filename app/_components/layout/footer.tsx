@@ -1,6 +1,6 @@
 import { Box, Typography } from "@mui/material"
 
-import { Container } from "@/app/_components/Container"
+import { Container } from "@/app/_components/ui/container"
 
 const WARNING = `Government Warning: Cigarette Smoking is Dangerous<br>to your health.`
 const purpleBarDefaultSx  = {

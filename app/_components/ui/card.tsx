@@ -2,7 +2,7 @@ import * as React from 'react'
 import { Box } from '@mui/material'
 
 import { TDefaultProps, TCardProps } from '@/app/_components/types'
-import { mergeSx } from '@/lib/helpers'
+import { mergeSx } from '@/app/_components/utils'
 
 const Card = React.forwardRef<HTMLDivElement, TCardProps>(({ sx = {}, ...props }, ref) => {
   const cardDefaultSx: TDefaultProps = {

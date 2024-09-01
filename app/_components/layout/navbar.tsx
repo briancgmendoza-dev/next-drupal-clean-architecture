@@ -1,9 +1,9 @@
 import { Typography } from "@mui/material"
 
-import { Container, RoundedContainer } from "@/app/_components/Container"
-import { Logo } from "@/app/_components/Logo"
-import { Points } from "@/app/_components/Points"
-import { Menu } from "@/app/_components/Menu"
+import { Container, RoundedContainer } from "@/app/_components/ui/container"
+import { Logo } from "@/app/_components/ui/logo"
+import { Points } from "@/app/_components/ui/points"
+import { Menu } from "@/app/_components/ui/menu"
 
 export default function NavBar() {
   return (
