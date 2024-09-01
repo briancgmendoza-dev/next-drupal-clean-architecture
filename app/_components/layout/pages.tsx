@@ -8,6 +8,8 @@ export const Pages = ({ children }: TPagesProps) => (
   <Container
     component="main"
     sx={{
+      height: "100vh",
+      bgcolor: "#000",
       position: "relative"
     }}
   >

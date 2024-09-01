@@ -1,11 +1,11 @@
 import * as React from 'react'
 import { Box } from '@mui/material'
 
-import { TDefaultProps, TCardProps } from '@/app/_components/types'
+import { TDefaultSx, TWithBoxSxProps } from '@/app/_components/types'
 import { mergeSx } from '@/app/_components/utils'
 
-const Card = React.forwardRef<HTMLDivElement, TCardProps>(({ sx = {}, ...props }, ref) => {
-  const cardDefaultSx: TDefaultProps = {
+const Card = React.forwardRef<HTMLDivElement, TWithBoxSxProps>(({ sx = {}, ...props }, ref) => {
+  const cardDefaultSx: TDefaultSx = {
     width: "100%",
     maxWidth: { xs: "375px", sm: "650px", md: "700px" },
     color: "#fff"

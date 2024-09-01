@@ -1,11 +1,11 @@
 import * as React from 'react'
 import { Box } from '@mui/material'
 
-import { TDefaultProps, TLogoProps } from '@/app/_components/types'
+import { TDefaultSx, TLogoProps } from '@/app/_components/types'
 import { mergeSx } from '@/app/_components/utils'
 
 const Logo = React.forwardRef<HTMLDivElement, TLogoProps>(({ sx = {}, src, alt, ...props }, ref) => {
-  const logoDefaultSx: TDefaultProps = {
+  const logoDefaultSx: TDefaultSx = {
     width: "100%",
     height: "100%",
     objectFit: "contain"

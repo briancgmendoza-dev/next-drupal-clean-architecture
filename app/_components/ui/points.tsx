@@ -1,14 +1,14 @@
 import * as React from 'react'
 import { Typography } from '@mui/material'
 
-import { TPointsProps, TDefaultProps } from '@/app/_components/types'
+import { TPointsProps, TDefaultSx } from '@/app/_components/types'
 import { mergeSx } from '@/app/_components/utils'
 
 const Points = React.forwardRef<
   HTMLDivElement,
   TPointsProps
 >(({ sx = {}, points ,...props }, ref) => {
-  const pointsDefaultSx: TDefaultProps = {
+  const pointsDefaultSx: TDefaultSx = {
     fontSize: {
       xs: "12px",
       sm: "14px",
