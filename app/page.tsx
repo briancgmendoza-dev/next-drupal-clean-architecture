@@ -1,21 +1,22 @@
-import { Card } from "./_components/Card";
-import { Container } from "./_components/Container"
+import { Container } from "@/app/_components/ui/container";
+import LoginForm from "@/app/_components/forms/login-form";
 
-export default function Home() {
+export default function Login() {
   return (
     <Container
       component="main"
+      sx={{ height: "100vh", bgcolor: "#000", color: "#fff" }}
     >
-      <Card
+      Login Page
+      <Container
+        component="section"
         sx={{
-          color: "#fff",
-          p: "1rem 1.5rem",
-          borderRadius: "12px",
-          border: "1px solid red"
+          maxWidth: { xs: "375px", sm: "650px", md: "850px" },
+          p: { xs: ".5rem 1rem", sm: "1rem 2rem", md: "1rem 3rem" }
         }}
       >
-        Hello
-      </Card>
+        <LoginForm />
+      </Container>
     </Container>
   );
 }
