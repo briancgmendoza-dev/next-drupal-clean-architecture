@@ -12,7 +12,12 @@ const Container = React.forwardRef<HTMLDivElement, TContainerProps>(({ sx = {}, 
     alignItems: "center",
     justifyContent: "center",
     bgcolor: "transparent",
-    border: "1px solid red"
+    border: {
+      xs: "1px solid red",
+      sm: "1px solid green",
+      md: "1px solid blue",
+      lg: "1px solid yellow"
+    }
   }
 
   return (
